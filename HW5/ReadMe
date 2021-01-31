@@ -1,0 +1,114 @@
+Menu Programi:
+	1901042697
+
+Driver Programlar:
+	vectorDriver
+	Array1dDriver
+	AdaptedVectorDriver
+	AdaptedDequeDriver
+
+============================
+---------------------
+Created Games : 				//Olusturulan oyunlarin listesi
+0 > vecGame
+1 > ArrayGame
+---------------------
+==========================		//Menu icerisinde yapabilecekleriniz
+ ====== MAIN MENU =======
+1-Create a new game
+2-Play an existing game
+3-Compare two game
+4-Check for Valid Sequence of game
+5-Quit
+Enter the operation : 
+
+1 )
+Which game do you want to create  		// 1 e girip olusturacaginiz oyunu secebilirsiniz
+
+1-Create a new game using HexVector.h
+2-Create a new game using HexArray1D.h
+3-Create a new game using HexAdater.h (vector)
+4-Create a new game using HexAdater.h (deque)
+
+Enter the operation :
+
+2 )									//2 ye girip olusturulan oyunlardan birini secip indexini girip oynayabilirsiniz
+Created Games : 
+0 > vecGame
+1 > ArrayGame
+2 > AdaptedVec
+---------------------
+Which game do you want to play enter the index of game : 0
+
+================Welcome The Hex Game Menu===================	//Oyun icerisinde kullanabilceginiz komutlar
+               GAME Id  = vecGame
+ "SAVE file.txt"       // This command game saving file.txt
+ "LOAD file.txt"       // This command Load game named by file.txt
+ "LAST"                // To get last move 
+ "RESET"               // To reset the board
+"MOVES"               // Show the number of moves
+ "MENU"                // If you want to change game or quit 
+ ====================Have a nice game :)====================
+-------------------------------------------------------------
+Please enter the size (Ex:5x5) : 8x8			//size ve tip belirleniyor
+1-> Play with friend
+2-> Play with computer
+Please, Enter a game type :2
+
+============================
+  a b c d e f g h 
+1 . . . . . . . . 
+2  . . . . . . . . 
+3   . . . . . . . . 
+4    . . . . . . . . 
+5     . . . . . . . . 
+6      . . . . . . . . 
+7       . . . . . . . . 
+8        . . . . . . . . 
+Enter coordinate (Ex: A 5) : A 3
+Computer move : D,6
+  a b c d e f g h 
+1 . . . . . . . . 
+2  . . . . . . . . 
+3   x . . . . . . . 
+4    . . . . . . . . 
+5     . . . . . . . . 
+6      . . . o . . . . 
+7       . . . . . . . . 
+8        . . . . . . . . 
+Enter coordinate (Ex: A 5) : LAST
+The last move is D 6
+Enter coordinate (Ex: A 5) : MOVES
+Number of moves = 2
+Enter coordinate (Ex: A 5) : SAVE s1.txt
+Game saved to s1.txt
+Enter coordinate (Ex: A 5) : LOAD s1.txt
+Game loaded from s1.txt
+Enter coordinate (Ex: A 5) : RESET
+  a b c d e f g h 
+1 . . . . . . . . 
+2  . . . . . . . . 
+3   . . . . . . . . 
+4    . . . . . . . . 
+5     . . . . . . . . 
+6      . . . . . . . . 
+7       . . . . . . . . 
+8        . . . . . . . . 
+Enter coordinate (Ex: A 5) : MENU  		Tekrar ana menuye donersiniz
+
+3)	
+	Enter the first game number : 0
+	Enter the second game number : 0
+
+TRUE
+vecGame and vecGame are equal game
+
+	Enter the first game number : 0
+	Enter the second game number : 1
+
+FALSE
+vecGame and ArrayGame are equal game
+
+4)
+Enter the game index to check valid sequence : 0
+  ==> vecGame is a valid game
